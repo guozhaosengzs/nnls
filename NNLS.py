@@ -11,8 +11,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def grad_dec(A, y, iters, learn_rate):
 
+def grad_dec(A, y, iters, learn_rate):
+    """ Given A as independent variables, y as dependent variable, initiate from a random vector b (between 0 - 1)and run 
+        for set iterations and learning rate. """
+    
     dim = A.shape[1]
     b = np.random.random(dim)
 
@@ -31,6 +34,7 @@ def grad_dec(A, y, iters, learn_rate):
     return {'b': b, 'min_func' : min_func, 'grad' : grad}
 
 def main():
+    """ Load data, prepare for gd operation and output result as graphs. """
     data = np.loadtxt('data.txt', dtype = np.float64)
     x = data[:,0]
     y = data[:,1]
