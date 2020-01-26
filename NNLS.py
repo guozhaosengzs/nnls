@@ -4,7 +4,7 @@
     Date:           2020-01-20
     Description:    Non-negative Least Squares
 
-    Given a data set of two dimensional matrix, use gradiant descent to find the
+    Given a data set of two dimensional matrix, use gradient descent to find the
     non-negative least squares for a regression line.
 """
 
